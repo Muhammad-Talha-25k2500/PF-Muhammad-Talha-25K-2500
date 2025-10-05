@@ -100,3 +100,5 @@ int main() {
 
 */
 
+Both loops produce the same result. However, for loops are more efficient and cleaner when the number of iterations is fixed (like star patterns). while loops are better when you don’t know how many times you’ll loop.
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 4 - Train Schedule Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f8ff;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 80%;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 8px 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #eef5ff;
+    }
+  </style>
+</head>
+<body>
+  <h2>Pakistan Railways - Train Schedule</h2>
+
+  <table>
+    <tr>
+      <th rowspan="2">Name of Train</th>
+      <th rowspan="2">Place</th>
+      <th rowspan="2">Destination</th>
+      <th rowspan="2">Train No.</th>
+      <th colspan="2">Time</th>
+      <th rowspan="2">Fare (PKR)</th>
+    </tr>
+    <tr>
+      <th>Arrival</th>
+      <th>Departure</th>
+    </tr>
+    <tr>
+      <td>Karakoram Express</td>
+      <td>Lahore</td>
+      <td>Karachi</td>
+      <td>123UP</td>
+      <td>06:00 AM</td>
+      <td>06:30 AM</td>
+      <td>2500</td>
+    </tr>
+    <tr>
+      <td>Green Line Express</td>
+      <td>Islamabad</td>
+      <td>Karachi</td>
+      <td>101UP</td>
+      <td>07:45 PM</td>
+      <td>08:00 PM</td>
+      <td>2800</td>
+    </tr>
+    <tr>
+      <td>Tezgam Express</td>
+      <td>Rawalpindi</td>
+      <td>Karachi</td>
+      <td>7DN</td>
+      <td>09:00 AM</td>
+      <td>09:30 AM</td>
+      <td>2300</td>
+    </tr>
+  </table>
+</body>
+</html>

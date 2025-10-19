@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div Layout Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background-color: green;
+      color: white;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      padding: 20px 0;
+    }
+
+    .container {
+      display: flex;
+      flex: 1; 
+    }
+
+    .left, .center, .right {
+      color: darkblue;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .left {
+      background-color: magenta;
+      width: 20%;
+    }
+
+    .center {
+      background-color: red;
+      width: 60%;
+    }
+
+    .right {
+      background-color: lime;
+      width: 20%;
+    }
+
+    .footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 22px;
+      padding: 15px 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left, .center, .right {
+        width: 100%;
+        height: 150px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">This is header</div>
+
+  <div class="container">
+    <div class="left">Left<br>Content</div>
+    <div class="center">Center Content</div>
+    <div class="right">Right Content</div>
+  </div>
+
+  <div class="footer">Footer</div>
+
+</body>
+</html>
